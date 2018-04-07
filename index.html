@@ -1,0 +1,129 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Firebase</title>
+
+  <!--  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- FormValidation JS file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+
+  <!-- Our CSS link -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"><center>Any Time is Train Time</h1>
+    <p class="lead"><center>Choo Choo. Chee Chee.</p>
+  </div>
+</div>
+  <table class="table">
+    <tr><th>Current Train Schedule</th></tr>
+    <tr>
+      <th>Train Name</th>
+      <th>Destination</th>
+      <th>Frequency (min)</th>
+      <th>Next Arrival </th>
+      <th>Minutes Away</th>
+    </tr>
+    <td>Trenton Express</td>
+    <td> Trenton </td>
+    <td> 25 </td>
+    <td> 05:35pm </td>
+    <td> 10 </td>
+    <tr>
+      <td>Oregon Trail</td>
+      <td> Salem, Oregon </td>
+      <td> 3600 </td>
+      <td> 01:39pm </td>
+      <td> 1154 </td>
+    </tr>
+    <tr>
+      <td>Midnight Carriage</td>
+      <td> Philadelphia </td>
+      <td> 15 </td>
+      <td> 05:35pm </td>
+      <td> 10 </td>
+    </tr>
+    <tr>
+      <td>Sing Sing Caravan</td>
+      <td> Atlanta </td>
+      <td> 45 </td>
+      <td> 05:53pm </td>
+      <td> 28 </td>
+    </tr>
+    <tr>
+      <td>Boston Bus </td>
+      <td> Boston </td>
+      <td> 65 </td>
+      <td> 05:50pm </td>
+      <td> 25 </td>
+    </tr>
+    <tr>
+      <td>California Caravan</td>
+      <td> San Francisco </td>
+      <td> 6000 </td>
+      <td> 01:25am </td>
+      <td> 4740 </td>
+    </tr>
+    <tr>
+      <td>Anabelle's Train</td>
+      <td> Florida </td>
+      <td> 25 </td>
+      <td> 05:28pm </td>
+      <td> 3 </td>
+    </tr>
+  </table>
+
+  <br>
+
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputHeader" class="col-sm-2 control-label">Add Train</label>
+    <!-- <div class="col-sm-12">
+      <input type="input-group" class="form-control" id="addTrainName">
+    </div> -->
+  </div>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="inputTrainName" class="col-sm-2 control-label">Train Name</label>
+      <div class="col-sm-12">
+        <input type="input-group" class="form-control" id="addTrainName">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputDestination" class="col-sm-2 control-label">Destination</label>
+      <div class="col-sm-12">
+        <input type="input-group" class="form-control" id="inputDestination">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputfirstTrainTime" class="col-sm-2 control-label">First Train Time(HH:mm & Military Time)</label>
+      <div class="col-sm-12">
+        <input type="input-group" class="form-control" id="firstTrainTime">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputFequency" class="col-sm-2 control-label">Frequency (Min)</label>
+      <div class="col-sm-12">
+        <input type="input-group" class="form-control" id="fequency">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
